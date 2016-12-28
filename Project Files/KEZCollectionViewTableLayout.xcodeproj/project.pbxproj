@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		468048DDF066F0C63A01A4C4 /* libPods-KEZCollectionViewTableLayoutTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D05FFF84448D12C907D978 /* libPods-KEZCollectionViewTableLayoutTests.a */; };
 		7F0729A5186542E800D3412D /* KEZTableLayoutCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0729A4186542E800D3412D /* KEZTableLayoutCellDelegate.m */; };
 		7F0729A8186543C400D3412D /* KEZTableLayoutCellAndHeaderDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0729A7186543C400D3412D /* KEZTableLayoutCellAndHeaderDelegate.m */; };
 		7F0729AE1867B40500D3412D /* KEZLabeledHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0729AD1867B40500D3412D /* KEZLabeledHeaderView.m */; };
@@ -25,10 +26,14 @@
 		7F1B56F7185663BD000DF816 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1B56D9185663BC000DF816 /* UIKit.framework */; };
 		7F1B56FF185663BD000DF816 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F1B56FD185663BD000DF816 /* InfoPlist.strings */; };
 		7F1B5701185663BD000DF816 /* KEZCollectionViewTableLayout_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B5700185663BD000DF816 /* KEZCollectionViewTableLayout_Tests.m */; };
-		7F1B570C1856647F000DF816 /* KEZCollectionViewTableLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B570B1856647F000DF816 /* KEZCollectionViewTableLayout.m */; };
 		7FBB7B37186E479D000A3059 /* KEZCornerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBB7B36186E479D000A3059 /* KEZCornerCell.m */; };
 		7FBB7B3A186E59C5000A3059 /* KEZSampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBB7B39186E59C5000A3059 /* KEZSampleTableViewController.m */; };
-		998D51DBFFF24B9EA524057A /* libPods-KEZCollectionViewTableLayoutTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B0BA2D9F28462C8C1EBAEF /* libPods-KEZCollectionViewTableLayoutTests.a */; };
+		B9A461CC1E14128A00B3C19E /* KEZTableLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A461BC1E14128A00B3C19E /* KEZTableLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9A461CF1E14128A00B3C19E /* KEZTableLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A461BA1E14128A00B3C19E /* KEZTableLayout.framework */; };
+		B9A461D01E14128A00B3C19E /* KEZTableLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9A461BA1E14128A00B3C19E /* KEZTableLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B9A461D91E1412E600B3C19E /* KEZCollectionViewTableLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B570B1856647F000DF816 /* KEZCollectionViewTableLayout.m */; };
+		B9A461DC1E14191900B3C19E /* KEZCollectionViewTableLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1B570A1856647F000DF816 /* KEZCollectionViewTableLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9A461DE1E141A4100B3C19E /* KEZTableLayout-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A461DD1E141A2A00B3C19E /* KEZTableLayout-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,12 +44,32 @@
 			remoteGlobalIDString = 7F1B56D1185663BC000DF816;
 			remoteInfo = KZCollectionViewTableLayout;
 		};
+		B9A461CD1E14128A00B3C19E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F1B56CA185663BC000DF816 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9A461B91E14128A00B3C19E;
+			remoteInfo = KEZTableLayout;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B9A461D61E14128A00B3C19E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B9A461D01E14128A00B3C19E /* KEZTableLayout.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		061C313BBB904DC78D31E33F /* Pods-KEZCollectionViewTableLayoutTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KEZCollectionViewTableLayoutTests.xcconfig"; path = "Pods/Pods-KEZCollectionViewTableLayoutTests.xcconfig"; sourceTree = "<group>"; };
-		26B0BA2D9F28462C8C1EBAEF /* libPods-KEZCollectionViewTableLayoutTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KEZCollectionViewTableLayoutTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F492C43D111405AA7A7E511 /* libPods-KZCollectionViewTableLayoutTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KZCollectionViewTableLayoutTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D05FFF84448D12C907D978 /* libPods-KEZCollectionViewTableLayoutTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KEZCollectionViewTableLayoutTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AB8D79357B7BE64F4434105 /* Pods-KEZCollectionViewTableLayoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KEZCollectionViewTableLayoutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KEZCollectionViewTableLayoutTests/Pods-KEZCollectionViewTableLayoutTests.release.xcconfig"; sourceTree = "<group>"; };
 		7F0729A3186542E800D3412D /* KEZTableLayoutCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KEZTableLayoutCellDelegate.h; sourceTree = "<group>"; };
 		7F0729A4186542E800D3412D /* KEZTableLayoutCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KEZTableLayoutCellDelegate.m; sourceTree = "<group>"; };
 		7F0729A6186543C400D3412D /* KEZTableLayoutCellAndHeaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KEZTableLayoutCellAndHeaderDelegate.h; sourceTree = "<group>"; };
@@ -79,6 +104,11 @@
 		7FBB7B36186E479D000A3059 /* KEZCornerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KEZCornerCell.m; sourceTree = "<group>"; };
 		7FBB7B38186E59C5000A3059 /* KEZSampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KEZSampleTableViewController.h; sourceTree = "<group>"; };
 		7FBB7B39186E59C5000A3059 /* KEZSampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KEZSampleTableViewController.m; sourceTree = "<group>"; };
+		B9A461BA1E14128A00B3C19E /* KEZTableLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KEZTableLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9A461BC1E14128A00B3C19E /* KEZTableLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KEZTableLayout.h; sourceTree = "<group>"; };
+		B9A461BD1E14128A00B3C19E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9A461DD1E141A2A00B3C19E /* KEZTableLayout-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KEZTableLayout-Bridging-Header.h"; sourceTree = "<group>"; };
+		FC3A5C94DCC949D7912B364F /* Pods-KEZCollectionViewTableLayoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KEZCollectionViewTableLayoutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KEZCollectionViewTableLayoutTests/Pods-KEZCollectionViewTableLayoutTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9A461CF1E14128A00B3C19E /* KEZTableLayout.framework in Frameworks */,
 				7F1B56D8185663BC000DF816 /* CoreGraphics.framework in Frameworks */,
 				7F1B56DA185663BC000DF816 /* UIKit.framework in Frameworks */,
 				7F1B56D6185663BC000DF816 /* Foundation.framework in Frameworks */,
@@ -99,7 +130,14 @@
 				7F1B56F5185663BD000DF816 /* XCTest.framework in Frameworks */,
 				7F1B56F7185663BD000DF816 /* UIKit.framework in Frameworks */,
 				7F1B56F6185663BD000DF816 /* Foundation.framework in Frameworks */,
-				998D51DBFFF24B9EA524057A /* libPods-KEZCollectionViewTableLayoutTests.a in Frameworks */,
+				468048DDF066F0C63A01A4C4 /* libPods-KEZCollectionViewTableLayoutTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A461B61E14128A00B3C19E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,9 +149,10 @@
 			children = (
 				7F1B56DB185663BD000DF816 /* KEZCollectionViewTableLayout */,
 				7F1B56FA185663BD000DF816 /* KEZCollectionViewTableLayoutTests */,
+				B9A461BB1E14128A00B3C19E /* KEZTableLayout */,
 				7F1B56D4185663BC000DF816 /* Frameworks */,
 				7F1B56D3185663BC000DF816 /* Products */,
-				061C313BBB904DC78D31E33F /* Pods-KEZCollectionViewTableLayoutTests.xcconfig */,
+				B60900D06610695C6766F918 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +161,7 @@
 			children = (
 				7F1B56D2185663BC000DF816 /* KEZCollectionViewTableLayout.app */,
 				7F1B56F3185663BD000DF816 /* KEZCollectionViewTableLayoutTests.xctest */,
+				B9A461BA1E14128A00B3C19E /* KEZTableLayout.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,8 +173,7 @@
 				7F1B56D7185663BC000DF816 /* CoreGraphics.framework */,
 				7F1B56D9185663BC000DF816 /* UIKit.framework */,
 				7F1B56F4185663BD000DF816 /* XCTest.framework */,
-				3F492C43D111405AA7A7E511 /* libPods-KZCollectionViewTableLayoutTests.a */,
-				26B0BA2D9F28462C8C1EBAEF /* libPods-KEZCollectionViewTableLayoutTests.a */,
+				75D05FFF84448D12C907D978 /* libPods-KEZCollectionViewTableLayoutTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,8 +183,6 @@
 			children = (
 				7FBB7B38186E59C5000A3059 /* KEZSampleTableViewController.h */,
 				7FBB7B39186E59C5000A3059 /* KEZSampleTableViewController.m */,
-				7F1B570A1856647F000DF816 /* KEZCollectionViewTableLayout.h */,
-				7F1B570B1856647F000DF816 /* KEZCollectionViewTableLayout.m */,
 				7F1B56E4185663BD000DF816 /* AppDelegate.h */,
 				7F1B56E5185663BD000DF816 /* AppDelegate.m */,
 				7F1B56E7185663BD000DF816 /* Main.storyboard */,
@@ -197,7 +234,41 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B60900D06610695C6766F918 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC3A5C94DCC949D7912B364F /* Pods-KEZCollectionViewTableLayoutTests.debug.xcconfig */,
+				7AB8D79357B7BE64F4434105 /* Pods-KEZCollectionViewTableLayoutTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9A461BB1E14128A00B3C19E /* KEZTableLayout */ = {
+			isa = PBXGroup;
+			children = (
+				7F1B570A1856647F000DF816 /* KEZCollectionViewTableLayout.h */,
+				7F1B570B1856647F000DF816 /* KEZCollectionViewTableLayout.m */,
+				B9A461BC1E14128A00B3C19E /* KEZTableLayout.h */,
+				B9A461DD1E141A2A00B3C19E /* KEZTableLayout-Bridging-Header.h */,
+				B9A461BD1E14128A00B3C19E /* Info.plist */,
+			);
+			path = KEZTableLayout;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B9A461B71E14128A00B3C19E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A461CC1E14128A00B3C19E /* KEZTableLayout.h in Headers */,
+				B9A461DC1E14191900B3C19E /* KEZCollectionViewTableLayout.h in Headers */,
+				B9A461DE1E141A4100B3C19E /* KEZTableLayout-Bridging-Header.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		7F1B56D1185663BC000DF816 /* KEZCollectionViewTableLayout */ = {
@@ -207,10 +278,12 @@
 				7F1B56CE185663BC000DF816 /* Sources */,
 				7F1B56CF185663BC000DF816 /* Frameworks */,
 				7F1B56D0185663BC000DF816 /* Resources */,
+				B9A461D61E14128A00B3C19E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B9A461CE1E14128A00B3C19E /* PBXTargetDependency */,
 			);
 			name = KEZCollectionViewTableLayout;
 			productName = KZCollectionViewTableLayout;
@@ -221,11 +294,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F1B5707185663BD000DF816 /* Build configuration list for PBXNativeTarget "KEZCollectionViewTableLayoutTests" */;
 			buildPhases = (
-				E892618DC21E4A4BA6993607 /* Check Pods Manifest.lock */,
+				45AFA80DD6EB52AE14D596AE /* [CP] Check Pods Manifest.lock */,
 				7F1B56EF185663BD000DF816 /* Sources */,
 				7F1B56F0185663BD000DF816 /* Frameworks */,
 				7F1B56F1185663BD000DF816 /* Resources */,
-				92D016D8A1DF4E5395A0AE0F /* Copy Pods Resources */,
+				7414B11CAEB00EADB61DD045 /* [CP] Embed Pods Frameworks */,
+				B4C2AF2BCD749707BE82089D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,20 +311,44 @@
 			productReference = 7F1B56F3185663BD000DF816 /* KEZCollectionViewTableLayoutTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B9A461B91E14128A00B3C19E /* KEZTableLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9A461D51E14128A00B3C19E /* Build configuration list for PBXNativeTarget "KEZTableLayout" */;
+			buildPhases = (
+				B9A461B51E14128A00B3C19E /* Sources */,
+				B9A461B61E14128A00B3C19E /* Frameworks */,
+				B9A461B71E14128A00B3C19E /* Headers */,
+				B9A461B81E14128A00B3C19E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KEZTableLayout;
+			productName = KEZTableLayout;
+			productReference = B9A461BA1E14128A00B3C19E /* KEZTableLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		7F1B56CA185663BC000DF816 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "James Richard";
 				TargetAttributes = {
 					7F1B56D1185663BC000DF816 = {
-						DevelopmentTeam = E9BG3AJZ7D;
+						DevelopmentTeam = KWV3LMSGNJ;
 					};
 					7F1B56F2185663BD000DF816 = {
+						DevelopmentTeam = KWV3LMSGNJ;
 						TestTargetID = 7F1B56D1185663BC000DF816;
+					};
+					B9A461B91E14128A00B3C19E = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = KWV3LMSGNJ;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -269,6 +367,7 @@
 			targets = (
 				7F1B56D1185663BC000DF816 /* KEZCollectionViewTableLayout */,
 				7F1B56F2185663BD000DF816 /* KEZCollectionViewTableLayoutTests */,
+				B9A461B91E14128A00B3C19E /* KEZTableLayout */,
 			);
 		};
 /* End PBXProject section */
@@ -292,37 +391,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B9A461B81E14128A00B3C19E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		92D016D8A1DF4E5395A0AE0F /* Copy Pods Resources */ = {
+		45AFA80DD6EB52AE14D596AE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-KEZCollectionViewTableLayoutTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E892618DC21E4A4BA6993607 /* Check Pods Manifest.lock */ = {
+		7414B11CAEB00EADB61DD045 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KEZCollectionViewTableLayoutTests/Pods-KEZCollectionViewTableLayoutTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4C2AF2BCD749707BE82089D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KEZCollectionViewTableLayoutTests/Pods-KEZCollectionViewTableLayoutTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -337,7 +458,6 @@
 				7F0729AE1867B40500D3412D /* KEZLabeledHeaderView.m in Sources */,
 				7F09A6D5185B6E30003F31D0 /* KEZTableLabelDataSource.m in Sources */,
 				7F1B56E6185663BD000DF816 /* AppDelegate.m in Sources */,
-				7F1B570C1856647F000DF816 /* KEZCollectionViewTableLayout.m in Sources */,
 				7FBB7B3A186E59C5000A3059 /* KEZSampleTableViewController.m in Sources */,
 				7F1B56E2185663BD000DF816 /* main.m in Sources */,
 			);
@@ -353,6 +473,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B9A461B51E14128A00B3C19E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A461D91E1412E600B3C19E /* KEZCollectionViewTableLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -360,6 +488,11 @@
 			isa = PBXTargetDependency;
 			target = 7F1B56D1185663BC000DF816 /* KEZCollectionViewTableLayout */;
 			targetProxy = 7F1B56F8185663BD000DF816 /* PBXContainerItemProxy */;
+		};
+		B9A461CE1E14128A00B3C19E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9A461B91E14128A00B3C19E /* KEZTableLayout */;
+			targetProxy = B9A461CD1E14128A00B3C19E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -395,7 +528,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -405,14 +537,20 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -425,7 +563,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -435,7 +573,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -445,20 +582,25 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -471,9 +613,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = KWV3LMSGNJ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KEZCollectionViewTableLayout/KEZCollectionViewTableLayout-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/KEZCollectionViewTableLayout/KEZCollectionViewTableLayout-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucidcoding.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -487,9 +632,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = KWV3LMSGNJ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KEZCollectionViewTableLayout/KEZCollectionViewTableLayout-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/KEZCollectionViewTableLayout/KEZCollectionViewTableLayout-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucidcoding.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -498,10 +646,10 @@
 		};
 		7F1B5708185663BD000DF816 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 061C313BBB904DC78D31E33F /* Pods-KEZCollectionViewTableLayoutTests.xcconfig */;
+			baseConfigurationReference = FC3A5C94DCC949D7912B364F /* Pods-KEZCollectionViewTableLayoutTests.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KEZCollectionViewTableLayout.app/KEZCollectionViewTableLayout";
+				DEVELOPMENT_TEAM = KWV3LMSGNJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -514,6 +662,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "KEZCollectionViewTableLayoutTests/KEZCollectionViewTableLayoutTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucidcoding.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -522,10 +671,10 @@
 		};
 		7F1B5709185663BD000DF816 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 061C313BBB904DC78D31E33F /* Pods-KEZCollectionViewTableLayoutTests.xcconfig */;
+			baseConfigurationReference = 7AB8D79357B7BE64F4434105 /* Pods-KEZCollectionViewTableLayoutTests.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KEZCollectionViewTableLayout.app/KEZCollectionViewTableLayout";
+				DEVELOPMENT_TEAM = KWV3LMSGNJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -534,9 +683,69 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KEZCollectionViewTableLayoutTests/KEZCollectionViewTableLayoutTests-Prefix.pch";
 				INFOPLIST_FILE = "KEZCollectionViewTableLayoutTests/KEZCollectionViewTableLayoutTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucidcoding.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		B9A461D11E14128A00B3C19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KWV3LMSGNJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = KEZTableLayout/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = richy486.KEZTableLayout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B9A461D21E14128A00B3C19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KWV3LMSGNJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = KEZTableLayout/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = richy486.KEZTableLayout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -566,6 +775,15 @@
 			buildConfigurations = (
 				7F1B5708185663BD000DF816 /* Debug */,
 				7F1B5709185663BD000DF816 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9A461D51E14128A00B3C19E /* Build configuration list for PBXNativeTarget "KEZTableLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9A461D11E14128A00B3C19E /* Debug */,
+				B9A461D21E14128A00B3C19E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

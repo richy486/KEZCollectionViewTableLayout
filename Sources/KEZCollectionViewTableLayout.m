@@ -169,11 +169,11 @@ NSString * const KEZCollectionViewTableLayoutDecorationViewCornerCell = @"KEZCol
     CGPoint newOrigin = newBounds.origin;
     CGFloat xDiff = newOrigin.x - origin.x;
     CGFloat yDiff = newOrigin.y - origin.y;
-    if (fabsf(xDiff) > FLT_EPSILON && [self hasRowHeaderSizing]) {
+    if (fabs(xDiff) > FLT_EPSILON && [self hasRowHeaderSizing]) {
       return YES;
     }
     
-    if (fabsf(yDiff) > FLT_EPSILON && [self hasColumnHeaderSizing]) {
+    if (fabs(yDiff) > FLT_EPSILON && [self hasColumnHeaderSizing]) {
       return YES;
     }
   }
